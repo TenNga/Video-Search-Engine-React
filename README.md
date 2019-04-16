@@ -27,5 +27,4 @@ This application will acts similar to YouTube app, like search vides according t
 	- Use onClick to listem for each click on video and pass the click response to parent component for display.
 
 ### Screenshot
-![Image of ScreenShot]
-(https://github.com/TenNga/Video-Search-Engine-React/blob/master/ScreenShot.JPG)
+![Image of ScreenShot](https://github.com/TenNga/Video-Search-Engine-React/blob/master/ScreenShot.JPG)
