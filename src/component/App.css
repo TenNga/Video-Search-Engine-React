@@ -1,0 +1,18 @@
+#scroll{
+    height: 500px;
+    overflow: scroll;
+    margin-top: 10px;
+    padding: 2px;
+    border-style: solid !important;
+    border: 1px;
+}
+#detail {
+    margin-top: 10px;
+}
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+
+    #scroll, #detail {
+      width:100% !important;
+    }
+  }

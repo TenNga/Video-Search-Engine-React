@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Video Search Engine (React)
 
-## Available Scripts
+This application will acts similar to YouTube app, like search vides according to the context and display a the result in list. Each click on item from list will display details about the video and will give option to play.  
 
-In the project directory, you can run:
+### Applicaiton feature
 
-### `npm start`
+* Search video 
+* Use of YouTube api
+* List of videos as result
+* Responsive
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Javascript classes and there roles
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. App.js
+	- Responsible for call all the component and act as a root/parent component.
+	- Make the youtube request and hold the result in an array.
+2. SearchBar.js
+	- Display searchbar as a form.
+	- Using props system, it will pass the term from input element to other component.
+	- Make the controlled component.
+3. VideoList.js
+	- Pass each video to child component using map and props system.
+	- Gives each video item unique key.
+	- Contain only getter and setter plus on toString for display.
+4. VideoItem.js
+	- Structure each video as an item with image, title and desciption (Similar to YouTube).
+	- Use onClick to listem for each click on video and pass the click response to parent component for display.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Screenshot
+![Image of app screen](https://github.com/TenNga/Video-Search-Engine-React/blob/master/Screenshot.jpg)
